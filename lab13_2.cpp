@@ -35,13 +35,16 @@ void updateImage(bool im[N][M],int s,int x,int y)
 
 void showImage(const bool im[N][M])
 {
+    cout << "------------------------------------------------------------------------\n";
     for(int i=0;i<N;i++)
-    {
+    {   
+        cout << "|";
         for(int j=0;j<M;j++)
         {
             if(im[i][j] == true) {cout << "*";}
             else{cout << " ";}
         }
-        cout << "\n";
+        cout << "|\n";
     }
+    cout << "------------------------------------------------------------------------\n";
 }
